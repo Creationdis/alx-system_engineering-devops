@@ -14,7 +14,7 @@ server_config=\
 frontend  Creationdis_frontend
         bind *:80
         mode http
-        default_backend besthor_backend
+        default_backend Creationdis_backend
 backend   Creationdis_backend
         balance roundrobin
         server 367659-web-01 52.207.208.21:80 check
